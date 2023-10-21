@@ -31,7 +31,7 @@ def is_win():
     chances=3
     for i in range(3):
         ans=input('please guess the word  :')
-        if ans==selected_vocab:
+        if ans.lower()==selected_vocab.lower():
             print('You win')
             break
         chances-=1
